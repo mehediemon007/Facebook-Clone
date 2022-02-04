@@ -1,5 +1,5 @@
 import React from 'react';
-import {Search} from "@mui/icons-material"
+import {Search,Person, Chat, Notifications} from "@mui/icons-material"
 import "./topbar.css";
 
 function Topbar() {
@@ -15,7 +15,29 @@ function Topbar() {
         </div>
       </div>
       <div className='topbarRight'>
-        
+        <div className='topbarLinks'>
+          <span className='topbarLink'>Homepage</span>
+          <span className='topbarLink'>Timeline</span>
+        </div>
+        <div className='topbarIcons'>
+          <div className='topbarIocnItem'>
+            <Person/>
+            <span className='topbarIconBadge'>1</span>
+          </div>
+          <div className='topbarIocnItem'>
+            <Chat/>
+            <span className='topbarIconBadge'>1</span>
+          </div>
+          <div className='topbarIocnItem'>
+            <Notifications/>
+            <span className='topbarIconBadge'>2</span>
+          </div>
+          <div className='topbarIocnItem'>
+            <Person/>
+            <span className='topbarIconBadge'>1</span>
+          </div>
+        </div>
+        <img src='/assets/person/1.jpeg' alt='user' className='topbarImg'/>
       </div>
     </div>
   );
